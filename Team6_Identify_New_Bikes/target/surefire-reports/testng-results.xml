@@ -1,23 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-02T14:11:58Z" name="Command line suite" finished-at="2021-10-02T14:12:36Z" duration-ms="37602">
+  <suite started-at="2021-10-02T14:46:06Z" name="TestSuite.RegressionTest" finished-at="2021-10-02T14:47:22Z" duration-ms="76548">
     <groups>
     </groups>
-    <test started-at="2021-10-02T14:11:58Z" name="Command line test" finished-at="2021-10-02T14:12:36Z" duration-ms="37602">
-      <class name="TestSuite.SmokeTest">
-        <test-method signature="setup()[pri:0, instance:TestSuite.SmokeTest@74fe5c40]" started-at="2021-10-02T14:12:28Z" name="setup" finished-at="2021-10-02T14:12:36Z" duration-ms="7613" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-      </class> <!-- TestSuite.SmokeTest -->
+    <test started-at="2021-10-02T14:46:06Z" name="Command line test" finished-at="2021-10-02T14:47:22Z" duration-ms="76548">
       <class name="TestSuite.RegressionTest">
-        <test-method signature="basic()[pri:0, instance:TestSuite.RegressionTest@436813f3]" started-at="2021-10-02T14:11:58Z" name="basic" finished-at="2021-10-02T14:12:28Z" duration-ms="29957" status="PASS">
+        <test-method signature="basic()[pri:0, instance:TestSuite.RegressionTest@24a35978]" started-at="2021-10-02T14:46:06Z" name="basic" finished-at="2021-10-02T14:46:15Z" duration-ms="9353" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basic -->
+        <test-method signature="testing()[pri:1, instance:TestSuite.RegressionTest@24a35978]" started-at="2021-10-02T14:46:15Z" name="testing" finished-at="2021-10-02T14:46:15Z" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing -->
+        <test-method signature="testing1()[pri:2, instance:TestSuite.RegressionTest@24a35978]" started-at="2021-10-02T14:46:15Z" name="testing1" finished-at="2021-10-02T14:46:48Z" duration-ms="32839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing1 -->
+        <test-method signature="testingCars()[pri:3, instance:TestSuite.RegressionTest@24a35978]" started-at="2021-10-02T14:46:48Z" name="testingCars" finished-at="2021-10-02T14:47:01Z" duration-ms="13546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingCars -->
+        <test-method signature="testingLogin()[pri:4, instance:TestSuite.RegressionTest@24a35978]" started-at="2021-10-02T14:47:01Z" name="testingLogin" finished-at="2021-10-02T14:47:21Z" duration-ms="19617" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testingLogin -->
+        <test-method signature="lastStep()[pri:5, instance:TestSuite.RegressionTest@24a35978]" started-at="2021-10-02T14:47:21Z" name="lastStep" finished-at="2021-10-02T14:47:22Z" duration-ms="1145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastStep -->
       </class> <!-- TestSuite.RegressionTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- Command line suite -->
+  </suite> <!-- TestSuite.RegressionTest -->
 </testng-results>

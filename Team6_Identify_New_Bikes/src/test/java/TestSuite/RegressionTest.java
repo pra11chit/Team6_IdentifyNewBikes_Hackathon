@@ -21,16 +21,16 @@ public class RegressionTest {
 		bs.openUrl();
 	}
 	
-	@Test(priority=1)
-	public void testing() throws IOException, InterruptedException
-	{
-		HomePage hd= new HomePage();
-//		hd.openUrl();
-//		hd.clickUpcomingBikes();
-//		hd.selectManufacturer();
-	}
+//	@Test(priority=1)
+//	public void testing() throws IOException, InterruptedException
+//	{
+//		HomePage hd= new HomePage();
+////		hd.openUrl();
+////		hd.clickUpcomingBikes();
+////		hd.selectManufacturer();
+//	}
 	
-	@Test(priority=2)
+	@Test(priority=1)
 	public void testing1() throws InterruptedException, IOException
 	{
 		HondaDetails hd= new HondaDetails();   
@@ -42,7 +42,7 @@ public class RegressionTest {
 		hd.printDetails();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=2)
 	public void testingCars() throws IOException, InterruptedException
 	{
 		ChennaiUsedCars cu = new ChennaiUsedCars();
@@ -51,7 +51,7 @@ public class RegressionTest {
 		cu.clickPopularModels();
 	}
 	
-	@Test(priority=4)
+	@Test(priority=3)
 	public void  testingLogin() throws InterruptedException, IOException
 	{
 		LoginPage l= new LoginPage();
@@ -61,7 +61,7 @@ public class RegressionTest {
 		l.captureErrorMessage();	
 	}
 	
-	@Test(priority=5)
+	@Test(priority=4)
 	public void lastStep() {
 		bs.closeBrowser();
 	}
