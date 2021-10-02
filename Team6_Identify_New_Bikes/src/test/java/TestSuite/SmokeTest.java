@@ -26,27 +26,27 @@ public class SmokeTest
 		stp.openUrl();
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void newBikes() {
 		HondaDetails hd= new HondaDetails();   
 		hd.clickUpcomingBikes();
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void usedCars() throws IOException, InterruptedException {
 		ChennaiUsedCars cu = new ChennaiUsedCars();
 		cu.openUrl();
 		cu.clickUsedCars();
 	}
 	
-	@Test
+	@Test(priority=4)
 	public void login() throws IOException, InterruptedException {
 		LoginPage l= new LoginPage();
 		l.openUrl();
 		l.clickLogin();
 	}
 	
-	@Test(priority=2)
+	@Test(priority=5)
 	public void lastStep() throws InterruptedException {
 		stp.closeBrowser();
 	} 
