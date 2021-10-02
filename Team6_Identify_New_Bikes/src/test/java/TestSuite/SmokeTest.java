@@ -5,7 +5,10 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import DriverSetup.DriverSetup;
+import Pages.ChennaiUsedCars;
 import Pages.HomePage;
+import Pages.HondaDetails;
+import Pages.LoginPage;
 
 
 public class SmokeTest 
@@ -18,11 +21,29 @@ public class SmokeTest
 	}
 	
 	@Test(priority=1)
-	public void testing() throws IOException, InterruptedException
+	public void testing1() throws IOException, InterruptedException
 	{
 		stp.openUrl();
-//		hd.clickUpcomingBikes();
-//		hd.selectManufacturer();
+	}
+	
+	@Test
+	public void newBikes() {
+		HondaDetails hd= new HondaDetails();   
+		hd.clickUpcomingBikes();
+	}
+	
+	@Test
+	public void usedCars() throws IOException, InterruptedException {
+		ChennaiUsedCars cu = new ChennaiUsedCars();
+		cu.openUrl();
+		cu.clickUsedCars();
+	}
+	
+	@Test
+	public void login() throws IOException, InterruptedException {
+		LoginPage l= new LoginPage();
+		l.openUrl();
+		l.clickLogin();
 	}
 	
 	@Test(priority=2)
