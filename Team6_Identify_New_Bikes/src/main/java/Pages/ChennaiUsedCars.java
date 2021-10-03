@@ -26,6 +26,8 @@ public class ChennaiUsedCars extends DriverSetup
 	
 	public void clickUsedCars()  // Method to click used_cars
 	{
+		System.out.println("* Opening Used Cars URL");
+
 		ExtentReportManager.logger = ExtentReportManager.report.createTest("Used Cars and Popular Model");
 		try{
 			ExtentReportManager.logger.log(Status.INFO, "Displaying Used Cars and Popular Model");
@@ -57,29 +59,11 @@ public class ChennaiUsedCars extends DriverSetup
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+		System.out.println("* Clicking on Chennai\n");
 		driver.findElement(By.linkText(prop.getProperty("chennai"))).click(); //Selecting Chennai City Successfully
 		highlighter.removeHighlight(driver, driver.findElement(By.xpath("//*[@id=\"headerNewNavWrap\"]/nav/div[2]/ul/li[5]/ul/li/div[2]/ul/li[5]")));
 		
-		
-//		JavascriptExecutor js = (JavascriptExecutor) driver;
-//		js.executeScript("window.scrollBy(0,400)", "");
-		
-//		try {
-//
-//			Thread.sleep(2000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		js.executeScript("window.scrollBy(0,500)", "");
-//		try {
-//
-//			Thread.sleep(1000);
-//		} catch (InterruptedException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		
+	
 		String usedCars = driver.findElement(By.xpath("//h1[@id='usedcarttlID']")).getText();
 		if (usedCars.contains("Used Cars in Chennai")) 
 			ExtentReportManager.reportPass("Used Cars in chennai are displayed");
@@ -112,6 +96,7 @@ public class ChennaiUsedCars extends DriverSetup
 		} catch (Exception e) {
 			ExtentReportManager.reportFail(e.getMessage());
 		}
+		System.out.println("\n* Writing Used Cars Info to Excel");
 	}
 
 

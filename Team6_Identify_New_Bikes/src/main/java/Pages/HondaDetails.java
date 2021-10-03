@@ -30,9 +30,10 @@ public class HondaDetails extends DriverSetup {
 	// Method to click Upcoming_bikes
 	public void clickUpcomingBikes() 
 	{
+		System.out.println("* Clicking On New Bikes");
 		ExtentReportManager.logger = ExtentReportManager.report.createTest("Upcoming Bikes");
 		try {
-			ExtentReportManager.logger.log(Status.INFO, "Clicking on upcoming Bikes");
+			ExtentReportManager.logger.log(Status.INFO, "Clicking on New Bikes");
 			
 			WebDriverWait wait = new WebDriverWait(driver, 15);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(prop.getProperty("nbikes"))));
@@ -66,8 +67,9 @@ public class HondaDetails extends DriverSetup {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
+			System.out.println("* Clicking on Upcoming Bikes");
 			driver.findElement((By.linkText(prop.getProperty("ubikes")))).click();
-
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[10]/ol/li[2]/span")));
 			String str = driver.findElement(By.xpath("/html/body/div[10]/ol/li[2]/span")).getText();
 			if (str.contains("Upcoming Bikes"))
 				ExtentReportManager.reportPass("Upcoming bikes has been opened"); //Selecting Upcoming Bikes Successfully
@@ -83,7 +85,7 @@ public class HondaDetails extends DriverSetup {
 		ExtentReportManager.logger = ExtentReportManager.report.createTest("Honda Manufacturer");
 		try {
 			ExtentReportManager.logger.log(Status.INFO, "Selecting the Honda Manufacturer");
-			
+			System.out.println("* Selecting the Honda Manufacturer");
 			WebDriverWait wait = new WebDriverWait(driver, 15);
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(prop.getProperty("smanuf"))));
 			WebElement drop = driver.findElement(By.id(prop.getProperty("smanuf")));
@@ -126,6 +128,7 @@ public class HondaDetails extends DriverSetup {
 		ExtentReportManager.logger = ExtentReportManager.report.createTest("Accessing View More");
 		try {
 			ExtentReportManager.logger.log(Status.INFO, "Accessing the view More");
+			System.out.println("* Accessing the view More");
 
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,400)", "");
@@ -181,7 +184,7 @@ public class HondaDetails extends DriverSetup {
 		ExtentReportManager.logger = ExtentReportManager.report.createTest("Obtaining bike prices");
 		
 		ExtentReportManager.logger.log(Status.INFO, "Obtaining the Bike Prices");
-		
+		System.out.println("* Obtaining the Bike Prices");
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(prop.getProperty("BikeNames"))));
 		List<WebElement> bikeNames = driver.findElements(By.xpath(prop.getProperty("BikeNames")));
@@ -192,7 +195,7 @@ public class HondaDetails extends DriverSetup {
 		System.out.println("==============================================================");
 		System.out.println("######### Upcoming Honda Bike Details under 4 Lakhs: #########");
 		System.out.println("==============================================================");
-		String str;
+//		String str;
 		excel.writeToExcel("Bike Name", 0, 0);
 		excel.writeToExcel("Bike Price", 0, 1);
 		excel.writeToExcel("Lauch Date", 0, 2);
@@ -207,14 +210,14 @@ public class HondaDetails extends DriverSetup {
 				priceTxt = bikePrices.get(i).getText();
 				float price = Float.parseFloat(priceTxt.replaceAll("Rs. ", "").replaceAll(" Lakh", ""));
 				if (price < 4) {
-					str = bikeNames.get(i).getText() + "|" + "\t" + bikePrices.get(i).getText() + "|" + "\t"
-							+ bikeLaunch.get(i).getText().substring(14);
+//					str = bikeNames.get(i).getText() + "|" + "\t" + bikePrices.get(i).getText() + "|" + "\t"
+//							+ bikeLaunch.get(i).getText().substring(14);
 					fmt.format("%20s %20s %20s\n", bikeNames.get(i).getText(), bikePrices.get(i).getText(), bikeLaunch.get(i).getText().substring(14));  
 					
 					excel.writeToExcel(bikeNames.get(i).getText(), rowNo, 0);
 					excel.writeToExcel(bikePrices.get(i).getText(), rowNo, 1);
 					excel.writeToExcel(bikeLaunch.get(i).getText().substring(14), rowNo, 2);
-
+					
 					rowNo++;
 				}
 			}
@@ -222,6 +225,7 @@ public class HondaDetails extends DriverSetup {
 		} catch (Exception e) {
 			ExtentReportManager.reportFail(e.getMessage());
 		}
-		System.out.println(fmt);  
+		System.out.println(fmt);
+		System.out.println("* Writing Bike Info to Excel");
 	}
 }

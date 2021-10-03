@@ -2,6 +2,7 @@ package TestSuite;
 
 import java.io.IOException;
 
+import org.apache.commons.math3.geometry.euclidean.twod.hull.ConvexHullGenerator2D;
 import org.testng.annotations.Test;
 
 import DriverSetup.DriverSetup;
@@ -17,17 +18,20 @@ public class SmokeTest
 	
 	@Test(priority=0)
 	public void setup() throws InterruptedException {
+		System.out.println("* Smoke Test Started");
 		stp.driverSetup();
 	}
 	
 	@Test(priority=1)
 	public void testing1() throws IOException, InterruptedException
 	{
+		HomePage hp = new HomePage();   
 		stp.openUrl();
+		hp.checkHomePageTitle();
 	}
 	
 	@Test(priority=2)
-	public void newBikes() {
+	public void newBikes() throws InterruptedException {
 		HondaDetails hd= new HondaDetails();   
 		hd.clickUpcomingBikes();
 	}

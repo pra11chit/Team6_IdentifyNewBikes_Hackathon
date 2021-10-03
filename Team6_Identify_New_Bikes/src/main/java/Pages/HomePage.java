@@ -2,11 +2,13 @@ package Pages;
 
 import org.openqa.selenium.By;
 
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import DriverSetup.DriverSetup;
 import utils.ExtentReportManager;
@@ -16,6 +18,17 @@ public class HomePage extends DriverSetup
 		By nbikes = By.linkText("New Bikes");
 		By ubikes = By.linkText("Upcoming Bikes");
 		By smanuf = By.id("makeId");
+		
+		public void checkHomePageTitle() {
+			ExtentReportManager.report.createTest("Page Title Validation");
+
+			String title = driver.getTitle();
+			
+			Assert.assertEquals("ZigWheels - New Cars, Used Cars, Bikes Prices, News, Reviews, Forum", title);
+			ExtentReportManager.reportPass("Page Title is as expected");
+			System.out.println("* Checking HomePage Title");
+
+		}
 		
 		public void clickUpcomingBikes() // Method to click Upcoming_Bikes
 		{   

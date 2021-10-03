@@ -20,6 +20,8 @@ public class LoginPage extends DriverSetup {
 	
 	public void clickLogin() // Method to click Login
 	{
+		System.out.println("* Opening Login Page URL");
+
 		ExtentReportManager.logger = ExtentReportManager.report.createTest("Clicking on Login/Signup");
 		try {
 			
@@ -65,11 +67,15 @@ public class LoginPage extends DriverSetup {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+		System.out.println("* Clicking on Continue With Google");
+
 		driver.findElement(By.xpath(prop.getProperty("googleSignIn"))).click();
 		for (String window : driver.getWindowHandles()) {
 			driver.switchTo().window(window);
 		}
 		Thread.sleep(2000);
+		System.out.println("* Entering email address");
+
 		driver.findElement(By.xpath(prop.getProperty("email"))).sendKeys("hackathon_team6_zig@gmail.com");
 		WebElement element1 = driver.findElement(By.xpath(prop.getProperty("submit")));
 	    jsExecutor.executeScript("arguments[0].setAttribute('style', 'border:3px solid red; background:yellow !important; color:black')", element1);

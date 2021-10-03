@@ -77,12 +77,13 @@ public class DriverSetup {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); 
 
 		ExtentReportManager.logger.log(Status.PASS, "Driver Loaded Successfully");
-
+		System.out.println("* Setting Up WebDriver");
 	}
 
 	// Method to open URL for smoke test
 	public void openUrl() throws IOException, InterruptedException 
 	{
+		Thread.sleep(2000);
 		ExtentReportManager.logger = ExtentReportManager.report.createTest("Opening Url");
 		
 		try {
@@ -104,11 +105,15 @@ public class DriverSetup {
 		
 		ExtentReportManager.reportPass("URL opened, URL is :" + prop.getProperty("url"));
 		ExtentReportManager.reportInfo("Screenshot Taken");
+		System.out.println("* Opening ZigWheels Homepage URL");
+
 	}
 
 	// method to close the browser
 	public void closeBrowser() 
 	{
+		System.out.println("* Closing Browser\n");
+
 		// To close the browser
 		driver.quit(); 
 		// To save the reports
