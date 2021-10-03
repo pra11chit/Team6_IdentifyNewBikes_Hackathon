@@ -2,68 +2,68 @@
 <testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-03T15:18:40Z" name="TestSuite.RegressionTest" finished-at="2021-10-03T15:20:57Z" duration-ms="137280">
+  <suite started-at="2021-10-03T15:48:29Z" name="TestSuite.RegressionTest" finished-at="2021-10-03T15:50:39Z" duration-ms="129640">
     <groups>
     </groups>
-    <test started-at="2021-10-03T15:18:40Z" name="Command line test" finished-at="2021-10-03T15:20:57Z" duration-ms="137280">
+    <test started-at="2021-10-03T15:48:29Z" name="Command line test" finished-at="2021-10-03T15:50:39Z" duration-ms="129640">
       <class name="TestSuite.RegressionTest">
-        <test-method signature="test1()[pri:0, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:18:40Z" name="test1" finished-at="2021-10-03T15:18:46Z" duration-ms="6397" status="PASS">
+        <test-method signature="test1()[pri:0, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:48:29Z" name="test1" finished-at="2021-10-03T15:48:39Z" duration-ms="9555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method signature="test2()[pri:1, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:18:46Z" name="test2" finished-at="2021-10-03T15:19:14Z" duration-ms="27748" status="PASS">
+        <test-method signature="test2()[pri:1, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:48:39Z" name="test2" finished-at="2021-10-03T15:48:57Z" duration-ms="18387" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method signature="test3()[pri:2, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:19:14Z" name="test3" finished-at="2021-10-03T15:19:14Z" duration-ms="9" status="PASS">
+        <test-method signature="test3()[pri:2, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:48:57Z" name="test3" finished-at="2021-10-03T15:48:57Z" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3 -->
-        <test-method signature="test4()[pri:3, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:19:14Z" name="test4" finished-at="2021-10-03T15:19:50Z" duration-ms="36576" status="PASS">
+        <test-method signature="test4()[pri:3, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:48:57Z" name="test4" finished-at="2021-10-03T15:49:06Z" duration-ms="8496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4 -->
-        <test-method signature="test5()[pri:4, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:19:50Z" name="test5" finished-at="2021-10-03T15:19:57Z" duration-ms="6970" status="PASS">
+        <test-method signature="test5()[pri:4, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:49:06Z" name="test5" finished-at="2021-10-03T15:49:16Z" duration-ms="10399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test5 -->
-        <test-method signature="test6()[pri:5, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:19:57Z" name="test6" finished-at="2021-10-03T15:20:05Z" duration-ms="7236" status="PASS">
+        <test-method signature="test6()[pri:5, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:49:16Z" name="test6" finished-at="2021-10-03T15:49:23Z" duration-ms="7226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test6 -->
-        <test-method signature="test7()[pri:6, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:20:05Z" name="test7" finished-at="2021-10-03T15:20:07Z" duration-ms="2264" status="PASS">
+        <test-method signature="test7()[pri:6, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:49:23Z" name="test7" finished-at="2021-10-03T15:49:30Z" duration-ms="7111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test7 -->
-        <test-method signature="test8()[pri:7, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:20:07Z" name="test8" finished-at="2021-10-03T15:20:14Z" duration-ms="6799" status="PASS">
+        <test-method signature="test8()[pri:7, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:49:30Z" name="test8" finished-at="2021-10-03T15:49:37Z" duration-ms="7115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test8 -->
-        <test-method signature="test9()[pri:8, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:20:14Z" name="test9" finished-at="2021-10-03T15:20:32Z" duration-ms="18173" status="PASS">
+        <test-method signature="test9()[pri:8, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:49:37Z" name="test9" finished-at="2021-10-03T15:50:12Z" duration-ms="34579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test9 -->
-        <test-method signature="test10()[pri:9, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:20:32Z" name="test10" finished-at="2021-10-03T15:20:33Z" duration-ms="963" status="PASS">
+        <test-method signature="test10()[pri:9, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:50:12Z" name="test10" finished-at="2021-10-03T15:50:13Z" duration-ms="1040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test10 -->
-        <test-method signature="test11()[pri:10, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:20:33Z" name="test11" finished-at="2021-10-03T15:20:39Z" duration-ms="6279" status="PASS">
+        <test-method signature="test11()[pri:10, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:50:13Z" name="test11" finished-at="2021-10-03T15:50:20Z" duration-ms="6941" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test11 -->
-        <test-method signature="test12()[pri:11, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:20:39Z" name="test12" finished-at="2021-10-03T15:20:47Z" duration-ms="7629" status="PASS">
+        <test-method signature="test12()[pri:11, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:50:20Z" name="test12" finished-at="2021-10-03T15:50:28Z" duration-ms="7605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test12 -->
-        <test-method signature="test13()[pri:12, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:20:47Z" name="test13" finished-at="2021-10-03T15:20:55Z" duration-ms="8186" status="PASS">
+        <test-method signature="test13()[pri:12, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:50:28Z" name="test13" finished-at="2021-10-03T15:50:37Z" duration-ms="9165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test13 -->
-        <test-method signature="testing14()[pri:13, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:20:55Z" name="testing14" finished-at="2021-10-03T15:20:55Z" duration-ms="90" status="PASS">
+        <test-method signature="testing14()[pri:13, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:50:37Z" name="testing14" finished-at="2021-10-03T15:50:37Z" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testing14 -->
-        <test-method signature="test15()[pri:14, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:20:55Z" name="test15" finished-at="2021-10-03T15:20:57Z" duration-ms="1938" status="PASS">
+        <test-method signature="test15()[pri:14, instance:TestSuite.RegressionTest@55183b20]" started-at="2021-10-03T15:50:37Z" name="test15" finished-at="2021-10-03T15:50:39Z" duration-ms="1871" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test15 -->

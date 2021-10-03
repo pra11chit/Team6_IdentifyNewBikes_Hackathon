@@ -15,7 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class excel {
 	public static int rowCount = 0;
 	public static void writeToExcel(String str, int rowNo, int cellNo) throws IOException {
-		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\output.xlsx");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\Excel-Output\\output.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		XSSFSheet sheet = workbook.getSheetAt(0);
 		
