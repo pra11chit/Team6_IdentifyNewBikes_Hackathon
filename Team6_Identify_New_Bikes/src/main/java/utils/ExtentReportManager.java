@@ -12,7 +12,7 @@ import DriverSetup.DriverSetup;
 
 public class ExtentReportManager extends DriverSetup{
 	public static ExtentReports report = ExtentReportManager.getReportInstance();
-	public static ExtentTest logger= report.createTest("Opening Url");
+	public static ExtentTest logger;
 public static ExtentReports getReportInstance(){
 		
 		if(report== null){
