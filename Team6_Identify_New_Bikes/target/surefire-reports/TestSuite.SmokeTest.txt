@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite.SmokeTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 47.524 sec
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 134.317 s - in TestSuite.SmokeTest
