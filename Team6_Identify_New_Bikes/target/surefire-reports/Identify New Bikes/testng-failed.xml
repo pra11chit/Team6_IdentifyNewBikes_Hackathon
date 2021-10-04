@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Identify New Bikes]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="2RegressionTesting(failed)" verbose="0">
+    <classes>
+      <class name="TestSuite.RegressionTest">
+        <methods>
+          <include name="testing14"/>
+          <include name="test13"/>
+        </methods>
+      </class> <!-- TestSuite.RegressionTest -->
+    </classes>
+  </test> <!-- 2RegressionTesting(failed) -->
+</suite> <!-- Failed suite [Identify New Bikes] -->

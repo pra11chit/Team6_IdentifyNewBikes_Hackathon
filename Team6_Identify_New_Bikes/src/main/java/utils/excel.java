@@ -40,7 +40,7 @@ public class excel {
 	    rowCount++;
 	    }
  
-        FileOutputStream fos = new FileOutputStream(System.getProperty("user.dir") + "\\output.xlsx");
+        FileOutputStream fos = new FileOutputStream(System.getProperty("user.dir") + "\\Excel-Output\\output.xlsx");
 		workbook.write(fos);
 		fos.close();
 	}
